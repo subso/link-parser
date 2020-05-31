@@ -1,6 +1,6 @@
 # Notify Link Parser
 
-Link parser for platform parsing data from platform specific links such as YouTube videos or Twitch Clips.
+Link parser for parsing data from platform specific links such as YouTube videos or Twitch Clips.
 
 ## Usage
 
