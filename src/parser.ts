@@ -1,6 +1,6 @@
 import { platforms } from './platforms';
 
-export function analyse(link) {
+export function analyse(link: string) {
     if (typeof link !== 'string') return undefined;
 
     for (let platformName in platforms) {
@@ -18,7 +18,7 @@ export function analyse(link) {
         }
     }
 }
-export function extract(matched) {
+export function extract(matched: RegExpMatchArray) {
     if (!matched) return undefined;
     for (let i = 0; i < matched.length; i++) {
         if (i > 0 && matched[i] !== undefined) return matched[i];
