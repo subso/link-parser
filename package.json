@@ -10,7 +10,7 @@
         "test": "mocha -r ts-node/register tests/index.spec.ts"
     },
     "author": "",
-    "license": "ISC",
+    "license": "MIT",
     "dev_dependencies": {
         "typescript": "^3.9.3"
     },
