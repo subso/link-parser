@@ -1,9 +1,17 @@
+// DO NOT CHANGE ORDER OF THIS ENUM
 export enum ContentType {
+  'post',
+  'video',
   'clip',
   'stream',
   'vod',
-  'channel',
-  'video',
+  'article',
+  'song',
+  'album',
+  'movie',
+  'fundraiser',
+  'invitation',
+  'event',
 }
 
 export interface PlatformObject {

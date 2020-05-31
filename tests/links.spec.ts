@@ -1,13 +1,6 @@
-import { helloTest, analyse } from '../lib';
+import { analyse } from '../lib';
 import { expect } from 'chai';
 import { describe, it } from 'mocha';
-
-describe('First test', () => {
-  it('should return true', () => {
-    const result = helloTest();
-    expect(result).to.equal(true);
-  });
-});
 
 function testResult(result: any, extractedId: string, contentType: string) {
   expect(result).to.have.property('extractedId');
