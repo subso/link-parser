@@ -7,7 +7,7 @@
         "test": "tests"
     },
     "scripts": {
-        "test": "mocha -r tests/index.spec.ts"
+        "test": "mocha -r ts-node/register tests/index.spec.ts"
     },
     "author": "",
     "license": "MIT",

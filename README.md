@@ -1,0 +1,1 @@
+I'll write how to use this once it's done. But for now I just need to get typescript + mocha & chai configured properly, so help would be appreciated 
