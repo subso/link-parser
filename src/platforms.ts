@@ -1,4 +1,6 @@
-export const platforms = {
+import { PlatformObject } from './interfaces';
+
+export const platforms: { [key: string]: PlatformObject } = {
   twitch: {
     key: 'twitch',
     name: 'Twitch',
