@@ -2,6 +2,12 @@
 
 Link parser for parsing data from platform specific links such as YouTube videos or Twitch Clips.
 
+## Running the tests
+
+Run the tests using mocha and chi
+
+`yarn test`
+
 ## Usage
 
-I'll write how to use this once it's done. But for now I just need to get typescript + mocha & chai configured properly, so help would be appreciated 
+We're going to write better documentation about using this library and contributing, but for now we'd love contributions.
