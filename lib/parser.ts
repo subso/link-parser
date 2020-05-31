@@ -14,7 +14,7 @@ export function analyse(link: string): PlatformObject | undefined {
       for (let contentTypeMatch in platformObj.contentTypeMatches) {
         // each regex entry should be ordered so the most simple is LAST in the object
         // the key of the entry into this object should be the content type ("clip" | "stream" | "video" etc)
-        let matched = link.match(platformObj.contentTypeMatches[contentTypeMatch]);
+        let matched = link.match(platformObj.contentTypeMatches[contentTypeMatch] || '');
         if (matched) {
           // extract key data and inject into platformObj
           platformObj.extractedId = extract(matched);

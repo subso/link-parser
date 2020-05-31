@@ -18,12 +18,32 @@ function testResult(result: any, extractedId: string, contentType: string) {
 
 describe('Twitch link test', () => {
   it('should parse clips, streams and channel links', () => {
-    // Link One
+    // Clip Link One
     const clipLinkOne = analyse('https://www.twitch.tv/jamiepinelive0/clip/AttractiveRichAntelopeTheThing?filter=clips&range=7d&sort=time');
     testResult(clipLinkOne, 'AttractiveRichAntelopeTheThing', 'clip');
 
-    // Link Two
+    // Clip Link Two
     const clipLinkTwo = analyse('https://twitch.tv/jamiepinelive/clip/AttractiveRichAntelopeTheThing');
     testResult(clipLinkTwo, 'AttractiveRichAntelopeTheThing', 'clip');
+
+    // Steam Link
+    const streamLink = analyse('https://twitch.tv/jackdouglas_');
+    testResult(streamLink, 'jackdouglas_', 'stream');
+
+    // Vod Link
+    const vodLink = analyse('https://www.twitch.tv/videos/617395794');
+    testResult(vodLink, '617395794', 'vod');
+  });
+});
+
+describe('YouTube', () => {
+  it('should prase youtube channel and video links', () => {
+    // Channel
+    const channelLink = analyse('https://www.youtube.com/channel/UCSa0hnM2n_yvOnecoQ2fgxA');
+    testResult(channelLink, 'UCSa0hnM2n_yvOnecoQ2fgxA', 'channel');
+
+    // Video
+    const videoLink = analyse('https://www.youtube.com/watch?v=LgqemiEqJtw');
+    testResult(videoLink, 'LgqemiEqJtw', 'video');
   });
 });
