@@ -12,6 +12,8 @@ export enum ContentType {
   'fundraiser',
   'invitation',
   'event',
+  'video',
+  'channel',
 }
 
 export interface PlatformObject {
