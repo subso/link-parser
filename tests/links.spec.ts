@@ -1,4 +1,4 @@
-import { helloTest, analyse } from '../src';
+import { helloTest, analyse } from '../lib';
 import { expect } from 'chai';
 import { describe, it } from 'mocha';
 
