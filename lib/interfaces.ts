@@ -12,7 +12,6 @@ export enum ContentType {
   'fundraiser',
   'invitation',
   'event',
-  'video',
   'channel',
 }
 
