@@ -13,6 +13,11 @@ export enum ContentType {
   'invitation',
   'event',
   'channel',
+  'artist',
+  'playlist',
+  'podcast',
+  'podcastEpisode',
+  'profile',
 }
 
 export interface PlatformObject {
