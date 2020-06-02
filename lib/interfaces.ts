@@ -18,6 +18,7 @@ export enum ContentType {
   'podcast',
   'podcastEpisode',
   'profile',
+  'image',
 }
 
 export interface PlatformObject {

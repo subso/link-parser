@@ -72,3 +72,15 @@ describe('Spotify link tests', () => {
     testResult(profileLink, 'rickastley', 'profile');
   });
 });
+
+describe('Instagram link tests', () => {
+  it('should parse instagram posts & user profiles', () => {
+    // Post
+    const postLink = analyse('https://www.instagram.com/p/CA6CDDrht8R/');
+    testResult(postLink, 'CA6CDDrht8R', 'image');
+
+    // Profile
+    const profileLink = analyse('https://www.instagram.com/pthehacksmith/');
+    testResult(profileLink, 'pthehacksmith', 'profile');
+  });
+});

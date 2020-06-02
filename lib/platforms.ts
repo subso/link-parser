@@ -43,4 +43,16 @@ export const platforms: { [key: string]: PlatformObject } = {
       profile: /http(?:s)?:\/\/(?:open\.)?spotify\.com\/user\/([a-zA-Z0-9]{1,})/,
     },
   },
+  instagram: {
+    key: 'instagram',
+    name: 'Instagram',
+    url: 'instagram.com',
+    hex: '#E4405F',
+    wideThumb: true,
+    baseURLMatch: /http(?:s)?:\/\/(?:www\.)?instagram\.com\//,
+    contentTypeMatches: {
+      image: /http(?:s)?:\/\/(?:www\.)?instagram\.com\/p\/([a-zA-Z0-9]{1,})/,
+      profile: /http(?:s)?:\/\/(?:www\.)?instagram\.com\/(?!p\/)([a-zA-Z0-9]{1,})/,
+    },
+  },
 };
