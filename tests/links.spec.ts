@@ -82,5 +82,9 @@ describe('Instagram link tests', () => {
     // Profile
     const profileLink = analyse('https://www.instagram.com/pthehacksmith/');
     testResult(profileLink, 'pthehacksmith', 'profile');
+
+    // Story
+    const storyLink = analyse('https://www.instagram.com/stories/milmike/');
+    testResult(storyLink, 'milmike', 'story');
   });
 });

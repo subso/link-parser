@@ -52,7 +52,8 @@ export const platforms: { [key: string]: PlatformObject } = {
     baseURLMatch: /http(?:s)?:\/\/(?:www\.)?instagram\.com\//,
     contentTypeMatches: {
       image: /http(?:s)?:\/\/(?:www\.)?instagram\.com\/p\/([a-zA-Z0-9]{1,})/,
-      profile: /http(?:s)?:\/\/(?:www\.)?instagram\.com\/(?!p\/)([a-zA-Z0-9]{1,})/,
+      profile: /http(?:s)?:\/\/(?:www\.)?instagram\.com\/(?!p\/)(?!stories\/)([a-zA-Z0-9]{1,})/,
+      story: /http(?:s)?:\/\/(?:www\.)?instagram\.com\/stories\/([a-zA-Z0-9]{1,})/,
     },
   },
 };
