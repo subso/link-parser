@@ -88,3 +88,15 @@ describe('Instagram link tests', () => {
     testResult(storyLink, 'milmike', 'story');
   });
 });
+
+describe('Github link tests', () => {
+  it('should parse github repos & profiles', () => {
+    // Profile
+    const profileLink = analyse('https://github.com/NotifyTeam');
+    testResult(profileLink, 'NotifyTeam', 'profile');
+
+    // Repo
+    const repoLink = analyse('https://github.com/NotifyTeam/link-parser');
+    testResult(repoLink, 'link-parser', 'repo');
+  });
+});

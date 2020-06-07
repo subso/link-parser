@@ -20,6 +20,7 @@ export enum ContentType {
   'profile',
   'image',
   'story',
+  'repo',
 }
 
 export interface PlatformObject {

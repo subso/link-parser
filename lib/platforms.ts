@@ -56,4 +56,16 @@ export const platforms: { [key: string]: PlatformObject } = {
       story: /http(?:s)?:\/\/(?:www\.)?instagram\.com\/stories\/([a-zA-Z0-9]{1,})/,
     },
   },
+  github: {
+    key: 'github',
+    name: 'Github',
+    url: 'github.com',
+    hex: '#000000',
+    wideThumb: false,
+    baseURLMatch: /http(?:s)?:\/\/(?:www\.)?github\.com\//,
+    contentTypeMatches: {
+      repo: /http(?:s)?:\/\/(?:www\.)?github\.com\/[A-z0-9_-]+\/([A-z0-9_-]+)\/?/,
+      profile: /http(?:s)?:\/\/(?:www\.)?github\.com\/([A-z0-9_-]{1,})/,
+    },
+  },
 };
