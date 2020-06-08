@@ -60,12 +60,23 @@ export const platforms: { [key: string]: PlatformObject } = {
     key: 'github',
     name: 'Github',
     url: 'github.com',
-    hex: '#000000',
+    hex: '#181717',
     wideThumb: false,
     baseURLMatch: /http(?:s)?:\/\/(?:www\.)?github\.com\//,
     contentTypeMatches: {
       repo: /http(?:s)?:\/\/(?:www\.)?github\.com\/[A-z0-9_-]+\/([A-z0-9_-]+)\/?/,
       profile: /http(?:s)?:\/\/(?:www\.)?github\.com\/([A-z0-9_-]{1,})/,
+    },
+  },
+  snapchat: {
+    key: 'snapchat',
+    name: 'Snapchat',
+    url: 'snapchat.com',
+    hex: '#FFFC00',
+    wideThumb: false,
+    baseURLMatch: /http(?:s)?:\/\/(?:www\.)?snapchat\.com\//,
+    contentTypeMatches: {
+      profile: /http(?:s)?:\/\/(?:www\.)?snapchat\.com\/add\/([A-z0-9\.\_\-]+)/,
     },
   },
 };

@@ -100,3 +100,11 @@ describe('Github link tests', () => {
     testResult(repoLink, 'link-parser', 'repo');
   });
 });
+
+describe('Snapchat link test', () => {
+  it('should parse snapchat profile', () => {
+    // Profile
+    const profileLink = analyse('http://www.snapchat.com/add/qwerty');
+    testResult(profileLink, 'qwerty', 'profile');
+  });
+});
