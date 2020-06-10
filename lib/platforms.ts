@@ -83,11 +83,22 @@ export const platforms: { [key: string]: PlatformObject } = {
     key: 'discord',
     name: 'Discord',
     url: 'discordapp.com',
-    hex: '',
+    hex: '#7289da',
     wideThumb: false,
     baseURLMatch: /http(?:s)?:\/\/(?:www\.)?(discordapp\.com|discord\.com|discord\.gg)\//,
     contentTypeMatches: {
       invite: /http(?:s)?:\/\/(?:www\.)?(?:discord\.gg|discordapp\.com\/invite|discord\.com\/invite)\/([a-zA-Z0-9_-]{1,})/,
+    },
+  },
+  dlive: {
+    key: 'dlive',
+    name: 'DLive',
+    url: 'dlive.com',
+    hex: '#ffd300',
+    wideThumb: false,
+    baseURLMatch: /http(?:s)?:\/\/(?:www\.)?dlive\.tv\//,
+    contentTypeMatches: {
+      channel: /http(?:s)?:\/\/dlive\.tv\/([a-zA-Z0-9_-]{1,})/,
     },
   },
 };

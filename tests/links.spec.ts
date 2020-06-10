@@ -124,3 +124,11 @@ describe('Discord link tests', () => {
     testResult(discordComLink, 'notify', 'invite');
   });
 });
+
+describe('DLive link test', () => {
+  it('should parse dlive channel link', () => {
+    // Channel
+    const channelLink = analyse('https://dlive.tv/dlive');
+    testResult(channelLink, 'dlive', 'channel');
+  });
+});
