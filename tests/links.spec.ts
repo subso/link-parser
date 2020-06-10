@@ -108,3 +108,19 @@ describe('Snapchat link test', () => {
     testResult(profileLink, 'qwerty', 'profile');
   });
 });
+
+describe('Discord link tests', () => {
+  it('should parse discord invite links', () => {
+    // Discord.gg invite
+    const discordGGLink = analyse('https://www.discord.gg/notify');
+    testResult(discordGGLink, 'notify', 'invite');
+
+    // Discordapp.com
+    const discordappComLink = analyse('https://www.discordapp.com/invite/notify');
+    testResult(discordappComLink, 'notify', 'invite');
+
+    // Discord.com
+    const discordComLink = analyse('https://www.discord.com/invite/notify');
+    testResult(discordComLink, 'notify', 'invite');
+  });
+});

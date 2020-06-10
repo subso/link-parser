@@ -79,4 +79,15 @@ export const platforms: { [key: string]: PlatformObject } = {
       profile: /http(?:s)?:\/\/(?:www\.)?snapchat\.com\/add\/([A-z0-9\.\_\-]+)/,
     },
   },
+  discord: {
+    key: 'discord',
+    name: 'Discord',
+    url: 'discordapp.com',
+    hex: '',
+    wideThumb: false,
+    baseURLMatch: /http(?:s)?:\/\/(?:www\.)?(discordapp\.com|discord\.com|discord\.gg)\//,
+    contentTypeMatches: {
+      invite: /http(?:s)?:\/\/(?:www\.)?(?:discord\.gg|discordapp\.com\/invite|discord\.com\/invite)\/([a-zA-Z0-9_-]{1,})/,
+    },
+  },
 };

@@ -21,6 +21,7 @@ export enum ContentType {
   'image',
   'story',
   'repo',
+  'invite',
 }
 
 export interface PlatformObject {
