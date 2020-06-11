@@ -137,4 +137,16 @@ export const platforms: { [key: string]: PlatformObject } = {
       artist: /http(?:s)?:\/\/(?:www\.)?soundcloud\.com\/([a-zA-Z0-9-_]{1,})/,
     },
   },
+  tiktok: {
+    key: 'tiktok',
+    name: 'TikTok',
+    url: 'tiktok.com',
+    hex: '#40A4C4',
+    wideThumb: true,
+    baseURLMatch: /http(?:s)?:\/\/(?:www\.)?tiktok\.com\//,
+    contentTypeMatches: {
+      post: /http(?:s)?:\/\/(?:www\.)?tiktok\.com\/@[a-zA-Z0-9-_]{1,}\/video\/([0-9]+)/,
+      channel: /http(?:s)?:\/\/(?:www\.)?tiktok\.com\/(@[a-zA-Z0-9_-]{1,})/,
+    },
+  },
 };

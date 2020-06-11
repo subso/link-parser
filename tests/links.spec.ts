@@ -135,7 +135,7 @@ describe('DLive link test', () => {
 
 describe('Mixer link test', () => {
   it('should parse mixer channel link', () => {
-    // Channel,
+    // Channel
     const channelLink = analyse('https://www.mixer.com/modesttim');
     testResult(channelLink, 'modesttim', 'channel');
   });
@@ -166,5 +166,17 @@ describe('SoundCloud link test', () => {
     // Album
     const albumLink = analyse('https://soundcloud.com/rick-astley-official/sets/the-best-of-25');
     testResult(albumLink, 'the-best-of-25', 'album');
+  });
+});
+
+describe('TikTok link test', () => {
+  it('should parse tiktok post & channel links', () => {
+    // Post
+    const postLink = analyse('https://www.tiktok.com/@yaboyjam/video/6834740248380017926');
+    testResult(postLink, '6834740248380017926', 'post');
+
+    // Channel
+    const channelLink = analyse('https://www.tiktok.com/@yaboyjam');
+    testResult(channelLink, '@yaboyjam', 'channel');
   });
 });
