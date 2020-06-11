@@ -180,3 +180,15 @@ describe('TikTok link test', () => {
     testResult(channelLink, '@yaboyjam', 'channel');
   });
 });
+
+describe('Twitter link test', () => {
+  it('should parse twitter post & profile links', () => {
+    // Post
+    const postLink = analyse('https://twitter.com/jamiepine/status/1136056546922848257');
+    testResult(postLink, '1136056546922848257', 'post');
+
+    // Channel
+    const profileLink = analyse('https://twitter.com/jamiepine');
+    testResult(profileLink, 'jamiepine', 'profile');
+  });
+});

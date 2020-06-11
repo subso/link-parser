@@ -149,4 +149,16 @@ export const platforms: { [key: string]: PlatformObject } = {
       channel: /http(?:s)?:\/\/(?:www\.)?tiktok\.com\/(@[a-zA-Z0-9_-]{1,})/,
     },
   },
+  twitter: {
+    key: 'twitter',
+    name: 'Twitter',
+    url: 'twitter.com',
+    hex: '#00aced',
+    wideThumb: false,
+    baseURLMatch: /http(?:s)?:\/\/(?:www\.)?twitter\.com\//,
+    contentTypeMatches: {
+      post: /http(?:s)?:\/\/(?:www\.)?twitter\.com\/[a-zA-Z0-9-_]{1,}\/status\/([0-9]+)/,
+      profile: /http(?:s)?:\/\/(?:www\.)?twitter\.com\/([a-zA-Z0-9-_]{1,})/,
+    },
+  },
 };
