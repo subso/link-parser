@@ -124,4 +124,17 @@ export const platforms: { [key: string]: PlatformObject } = {
       post: /http(?:s)?:\/\/(?:www\.)?patreon\.com\/posts\/([0-9]{1,})/,
     },
   },
+  soundcloud: {
+    key: 'soundcloud',
+    name: 'SoundCloud',
+    url: 'soundcloud.com',
+    hex: '#ff8800',
+    wideThumb: false,
+    baseURLMatch: /http(?:s)?:\/\/(?:www\.)?soundcloud\.com\//,
+    contentTypeMatches: {
+      song: /http(?:s)?:\/\/(?:www\.)?soundcloud\.com\/[a-zA-Z0-9-_]{1,}\/([^sets][a-zA-Z0-9-_]{1,})/,
+      album: /http(?:s)?:\/\/(?:www\.)?soundcloud\.com\/[a-zA-Z0-9-_]{1,}\/sets\/([a-zA-Z0-9-_]{1,})/,
+      artist: /http(?:s)?:\/\/(?:www\.)?soundcloud\.com\/([a-zA-Z0-9-_]{1,})/,
+    },
+  },
 };

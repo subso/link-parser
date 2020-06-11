@@ -152,3 +152,19 @@ describe('Patreon link tests', () => {
     testResult(postLink, '38049983', 'post');
   });
 });
+
+describe('SoundCloud link test', () => {
+  it('should parse soundcloud song, artist & album', () => {
+    // Song
+    const songLink = analyse('https://soundcloud.com/rick-astley-official/never-gonna-give-you-up-1');
+    testResult(songLink, 'never-gonna-give-you-up-1', 'song');
+
+    // Artist
+    const artistLink = analyse('https://soundcloud.com/rick-astley-official');
+    testResult(artistLink, 'rick-astley-official', 'artist');
+
+    // Album
+    const albumLink = analyse('https://soundcloud.com/rick-astley-official/sets/the-best-of-25');
+    testResult(albumLink, 'the-best-of-25', 'album');
+  });
+});
