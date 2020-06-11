@@ -161,4 +161,15 @@ export const platforms: { [key: string]: PlatformObject } = {
       profile: /http(?:s)?:\/\/(?:www\.)?twitter\.com\/([a-zA-Z0-9-_]{1,})/,
     },
   },
+  timcoleme: {
+    key: 'timcoleme',
+    name: 'Timothy Cole',
+    url: 'timcole.me',
+    hex: '#1b7fe6',
+    wideThumb: true,
+    baseURLMatch: /http(?:s)?:\/\/(?:www\.)?timcole\.me\//,
+    contentTypeMatches: {
+      stream: /http(?:s)?:\/\/timcole\.me\/(nda)/,
+    },
+  },
 };

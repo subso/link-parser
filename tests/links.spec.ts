@@ -192,3 +192,12 @@ describe('Twitter link test', () => {
     testResult(profileLink, 'jamiepine', 'profile');
   });
 });
+
+// If you know you know
+describe("Tim' NDA link test", () => {
+  it("should parse tim' nda stream link", () => {
+    // Stream
+    const streamLink = analyse('https://timcole.me/nda');
+    testResult(streamLink, 'nda', 'stream');
+  });
+});
