@@ -132,3 +132,23 @@ describe('DLive link test', () => {
     testResult(channelLink, 'dlive', 'channel');
   });
 });
+
+describe('Mixer link test', () => {
+  it('should parse mixer channel link', () => {
+    // Channel,
+    const channelLink = analyse('https://www.mixer.com/modesttim');
+    testResult(channelLink, 'modesttim', 'channel');
+  });
+});
+
+describe('Patreon link tests', () => {
+  it('should parse patreon channel and post links', () => {
+    // Channel
+    const channelLink = analyse('https://www.patreon.com/Barnacules');
+    testResult(channelLink, 'Barnacules', 'channel');
+
+    // Post
+    const postLink = analyse('https://www.patreon.com/posts/38049983');
+    testResult(postLink, '38049983', 'post');
+  });
+});

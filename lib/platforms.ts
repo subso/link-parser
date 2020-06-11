@@ -101,4 +101,27 @@ export const platforms: { [key: string]: PlatformObject } = {
       channel: /http(?:s)?:\/\/dlive\.tv\/([a-zA-Z0-9_-]{1,})/,
     },
   },
+  mixer: {
+    key: 'mixer',
+    name: 'Mixer',
+    url: 'mixer.com',
+    hex: '#29bbed',
+    wideThumb: true,
+    baseURLMatch: /http(?:s)?:\/\/(?:www\.)?mixer\.com\//,
+    contentTypeMatches: {
+      channel: /http(?:s)?:\/\/(?:www\.)?mixer\.com\/([a-zA-Z0-9_-]{1,})/,
+    },
+  },
+  patreon: {
+    key: 'patreon',
+    name: 'Patreon',
+    url: 'patreon.com',
+    hex: '#f96854',
+    wideThumb: false,
+    baseURLMatch: /http(?:s)?:\/\/(?:www\.)?patreon\.com\//,
+    contentTypeMatches: {
+      channel: /http(?:s)?:\/\/(?:www\.)?patreon\.com\/([^posts\/][a-zA-Z0-9-_]{1,})/,
+      post: /http(?:s)?:\/\/(?:www\.)?patreon\.com\/posts\/([0-9]{1,})/,
+    },
+  },
 };
