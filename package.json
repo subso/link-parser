@@ -1,6 +1,6 @@
 {
   "name": "@notify.me/link-parser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A directory of supported platforms for Notify with link parsing and metadata",
   "main": "dist/index.js",
   "directories": {
