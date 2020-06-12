@@ -10,6 +10,7 @@
   "scripts": {
     "test": "mocha -r ts-node/register tests/links.spec.ts",
     "build": "yarn test; tsc",
+    "postinstall": "yarn build",
     "dev": "tsc -w",
     "push": "yarn build; cp -R package.json README.md LICENSE yarn.lock dist; (cd dist && yarn publish --non-interactive); rm -rf dist/package.json dist/README.md dist/LICENSE dist/yarn.lock",
     "lnk": "yarn build; cp -R package.json README.md LICENSE yarn.lock dist; (cd dist && yarn link)"
