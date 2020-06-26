@@ -2,6 +2,7 @@ import { PlatformObject } from './interfaces';
 
 export const platforms: { [key: string]: PlatformObject } = {
   twitch: {
+    id: 'twch',
     key: 'twitch',
     name: 'Twitch',
     url: 'twitch.tv',
@@ -14,7 +15,9 @@ export const platforms: { [key: string]: PlatformObject } = {
       stream: /http(?:s)?:\/\/(?:www\.)?twitch\.tv\/([a-zA-Z0-9_]+)/,
     },
   },
+
   youtube: {
+    id: 'yt',
     key: 'youtube',
     name: 'YouTube',
     url: 'youtube.com',
@@ -26,7 +29,9 @@ export const platforms: { [key: string]: PlatformObject } = {
       video: /http(?:s?):\/\/(?:www\.)?youtu(?:be\.com\/watch\?v=|\.be\/)([\w\-\_]*)(&(amp;)[\w\=]*)?/,
     },
   },
+
   spotify: {
+    id: 'spfy',
     key: 'spotify',
     name: 'Spotify',
     url: 'spotify.com',
@@ -43,7 +48,9 @@ export const platforms: { [key: string]: PlatformObject } = {
       profile: /http(?:s)?:\/\/(?:open\.)?spotify\.com\/user\/([a-zA-Z0-9]{1,})/,
     },
   },
+
   instagram: {
+    id: 'ig',
     key: 'instagram',
     name: 'Instagram',
     url: 'instagram.com',
@@ -56,7 +63,9 @@ export const platforms: { [key: string]: PlatformObject } = {
       story: /http(?:s)?:\/\/(?:www\.)?instagram\.com\/stories\/([a-zA-Z0-9]{1,})/,
     },
   },
+
   github: {
+    id: 'gh',
     key: 'github',
     name: 'Github',
     url: 'github.com',
@@ -68,7 +77,9 @@ export const platforms: { [key: string]: PlatformObject } = {
       profile: /http(?:s)?:\/\/(?:www\.)?github\.com\/([A-z0-9_-]{1,})/,
     },
   },
+
   snapchat: {
+    id: 'snap',
     key: 'snapchat',
     name: 'Snapchat',
     url: 'snapchat.com',
@@ -79,7 +90,9 @@ export const platforms: { [key: string]: PlatformObject } = {
       profile: /http(?:s)?:\/\/(?:www\.)?snapchat\.com\/add\/([A-z0-9\.\_\-]+)/,
     },
   },
+
   discord: {
+    id: 'dg',
     key: 'discord',
     name: 'Discord',
     url: 'discordapp.com',
@@ -90,7 +103,9 @@ export const platforms: { [key: string]: PlatformObject } = {
       invite: /http(?:s)?:\/\/(?:www\.)?(?:discord\.gg|discordapp\.com\/invite|discord\.com\/invite)\/([a-zA-Z0-9_-]{1,})/,
     },
   },
+
   dlive: {
+    id: 'dlv',
     key: 'dlive',
     name: 'DLive',
     url: 'dlive.com',
@@ -101,7 +116,9 @@ export const platforms: { [key: string]: PlatformObject } = {
       channel: /http(?:s)?:\/\/dlive\.tv\/([a-zA-Z0-9_-]{1,})/,
     },
   },
+
   mixer: {
+    id: 'mixr',
     key: 'mixer',
     name: 'Mixer',
     url: 'mixer.com',
@@ -112,7 +129,9 @@ export const platforms: { [key: string]: PlatformObject } = {
       channel: /http(?:s)?:\/\/(?:www\.)?mixer\.com\/([a-zA-Z0-9_-]{1,})/,
     },
   },
+
   patreon: {
+    id: 'ptrn',
     key: 'patreon',
     name: 'Patreon',
     url: 'patreon.com',
@@ -124,7 +143,9 @@ export const platforms: { [key: string]: PlatformObject } = {
       post: /http(?:s)?:\/\/(?:www\.)?patreon\.com\/posts\/([0-9]{1,})/,
     },
   },
+
   soundcloud: {
+    id: 'scld',
     key: 'soundcloud',
     name: 'SoundCloud',
     url: 'soundcloud.com',
@@ -137,7 +158,9 @@ export const platforms: { [key: string]: PlatformObject } = {
       artist: /http(?:s)?:\/\/(?:www\.)?soundcloud\.com\/([a-zA-Z0-9-_]{1,})/,
     },
   },
+
   tiktok: {
+    id: 'tktk',
     key: 'tiktok',
     name: 'TikTok',
     url: 'tiktok.com',
@@ -149,7 +172,9 @@ export const platforms: { [key: string]: PlatformObject } = {
       channel: /http(?:s)?:\/\/(?:www\.)?tiktok\.com\/(@[a-zA-Z0-9_-]{1,})/,
     },
   },
+
   twitter: {
+    id: 'twtr',
     key: 'twitter',
     name: 'Twitter',
     url: 'twitter.com',
@@ -161,7 +186,9 @@ export const platforms: { [key: string]: PlatformObject } = {
       profile: /http(?:s)?:\/\/(?:www\.)?twitter\.com\/([a-zA-Z0-9-_]{1,})/,
     },
   },
+
   timcoleme: {
+    id: 'timc',
     key: 'timcoleme',
     name: 'Timothy Cole',
     url: 'timcole.me',

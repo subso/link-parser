@@ -25,6 +25,7 @@ export enum ContentType {
 }
 
 export interface PlatformObject {
+  id: string;
   key: string;
   name: string;
   url: string;
