@@ -32,7 +32,7 @@ export interface PlatformObject {
   hex: string;
   wideThumb: boolean;
   baseURLMatch: RegExp;
-  contentTypeMatches: { [key in keyof typeof ContentType]?: RegExp };
+  contentTypeMatches: { [key in keyof typeof ContentType]: RegExp };
   extractedId?: string;
   contentType?: string;
 }
