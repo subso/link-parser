@@ -200,3 +200,10 @@ export const platforms: { [key: string]: PlatformObject } = {
     },
   },
 };
+
+// Statically render an object that maps platform keys to their respective platform ids
+export const idToKey = (() => {
+  const obj: { [key: string]: string } = {};
+  Object.keys(platforms).map((platformName) => (obj[platforms[platformName].id] = platformName));
+  return obj;
+})();

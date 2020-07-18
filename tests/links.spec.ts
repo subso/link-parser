@@ -1,6 +1,14 @@
-import { analyse } from '../lib';
+import { analyse, idToKey } from '../lib';
 import { expect } from 'chai';
 import { describe, it } from 'mocha';
+
+describe('Platform index function', () => {
+  it('should return a map of ids to keys', () => {
+    console.log(idToKey);
+    expect(idToKey).to.be.an('object');
+    expect(idToKey['yt']).to.be.equal('youtube');
+  });
+});
 
 function testResult(result: any, extractedId: string, contentType: string) {
   expect(result).to.have.property('extractedId');

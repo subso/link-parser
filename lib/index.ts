@@ -1,3 +1,3 @@
 export * from './parser';
-export { platforms } from './platforms';
+export { platforms, idToKey } from './platforms';
 export { ContentType } from './interfaces';
