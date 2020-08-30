@@ -17,3 +17,6 @@ development
 .env.*
 .env
 !.env.example
+
+# Editors
+.idea
