@@ -20,3 +20,6 @@ development
 
 # Editors
 .idea
+
+# Error logs
+yarn-error.log

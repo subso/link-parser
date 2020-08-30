@@ -1,6 +1,6 @@
 {
-  "name": "@notify.me/link-parser",
-  "version": "1.0.7",
+  "name": "@subso/link-parser",
+  "version": "0.0.1",
   "description": "A directory of supported platforms for Notify with link parsing and metadata",
   "directories": {
     "test": "tests",
@@ -8,20 +8,19 @@
   },
   "scripts": {
     "test": "mocha -r ts-node/register tests/links.spec.ts",
-    "build": "yarn test; tsc",
-    "dev": "tsc -w",
-    "push": "yarn build; cp -R package.json README.md LICENSE yarn.lock dist; (cd dist && yarn publish --non-interactive); rm -rf dist/package.json dist/README.md dist/LICENSE dist/yarn.lock",
-    "lnk": "yarn build; cp -R package.json README.md LICENSE yarn.lock dist; (cd dist && yarn link)"
+    "build": "tsc",
+    "build:watch": "tsc -w",
+    "prepare": "tsc"
   },
   "author": "Notify Technology, Inc. <code@notify.me>",
   "license": "MIT",
   "devDependencies": {
-    "prettier": "^2.0.5",
-    "typescript": "^3.9.3",
     "@types/chai": "^4.2.11",
     "@types/mocha": "^7.0.2",
     "chai": "^4.2.0",
     "mocha": "^7.2.0",
-    "ts-node": "^8.10.2"
+    "prettier": "^2.0.5",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.3"
   }
 }
