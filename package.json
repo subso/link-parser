@@ -1,6 +1,6 @@
 {
   "name": "@subso/link-parser",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "description": "A directory of supported platforms for Notify with link parsing and metadata",
@@ -8,6 +8,10 @@
     "test": "tests",
     "lib": "lib"
   },
+  "files": [
+    "dist",
+    "src"
+  ],
   "scripts": {
     "test": "mocha -r ts-node/register tests/links.spec.ts",
     "build": "tsc",
