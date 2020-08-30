@@ -11,7 +11,7 @@ export function analyse(link: string): PlatformObject | undefined {
     for (const contentTypeMatch in platformObj.contentTypeMatches) {
       // each regex entry should be ordered so the most simple is LAST in the object
       // the key of the entry into this object should be the ContentType ("clip" | "stream" | "video" etc)
-      let matched = link.match(platformObj.contentTypeMatches[contentTypeMatch as ContentType] || '');
+      const matched = link.match(platformObj.contentTypeMatches[contentTypeMatch as ContentType] || '');
 
       if (!matched) continue;
 
