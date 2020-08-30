@@ -1,0 +1,19 @@
+name: Test Link Parser
+
+on:
+  push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install NodeJs
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+      - name: Install packages
+        run: yarn install
+      - name: Run Tests
+        run: yarn run test
+

@@ -1,14 +1,6 @@
-import { analyse, idToKey } from '../lib';
+import { analyse } from '../lib';
 import { expect } from 'chai';
 import { describe, it } from 'mocha';
-
-describe('Platform index function', () => {
-  it('should return a map of ids to keys', () => {
-    console.log(idToKey);
-    expect(idToKey).to.be.an('object');
-    expect(idToKey['yt']).to.be.equal('youtube');
-  });
-});
 
 function testResult(result: any, extractedId: string, contentType: string) {
   expect(result).to.have.property('extractedId');
@@ -141,14 +133,6 @@ describe('DLive link test', () => {
   });
 });
 
-describe('Mixer link test', () => {
-  it('should parse mixer channel link', () => {
-    // Channel
-    const channelLink = analyse('https://www.mixer.com/modesttim');
-    testResult(channelLink, 'modesttim', 'channel');
-  });
-});
-
 describe('Patreon link tests', () => {
   it('should parse patreon channel and post links', () => {
     // Channel
@@ -201,11 +185,13 @@ describe('Twitter link test', () => {
   });
 });
 
-// If you know you know
-describe("Tim' NDA link test", () => {
-  it("should parse tim' nda stream link", () => {
-    // Stream
-    const streamLink = analyse('https://timcole.me/nda');
-    testResult(streamLink, 'nda', 'stream');
+describe('Unfound/Invalid link test', () => {
+  it('should return undefined to a valid url but not registered', () => {
+    const unfoundLink = analyse('https://test.test/test');
+    expect(unfoundLink).to.be.equal(undefined);
+  });
+  it('should return undefined to an invalid url', () => {
+    const invalidUrl = analyse('test');
+    expect(invalidUrl).to.be.equal(undefined);
   });
 });

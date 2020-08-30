@@ -1,13 +1,10 @@
-# Notify Link Parser
+# Subso Link Parser
+(Forked from Notify Link Parser, with various code improvements made)
 
 Link parser for parsing data from platform specific links such as YouTube videos or Twitch Clips.
 
 ## Running the tests
-
-Run the tests using mocha and chi
+ 
+Run the tests using mocha and chai
 
 `yarn test`
-
-## Usage
-
-We're going to write better documentation about using this library and contributing, but for now we'd love contributions.

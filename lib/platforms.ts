@@ -2,7 +2,6 @@ import { PlatformObject } from './interfaces';
 
 export const platforms: { [key: string]: PlatformObject } = {
   twitch: {
-    id: 'twch',
     key: 'twitch',
     name: 'Twitch',
     url: 'twitch.tv',
@@ -17,7 +16,6 @@ export const platforms: { [key: string]: PlatformObject } = {
   },
 
   youtube: {
-    id: 'yt',
     key: 'youtube',
     name: 'YouTube',
     url: 'youtube.com',
@@ -31,7 +29,6 @@ export const platforms: { [key: string]: PlatformObject } = {
   },
 
   spotify: {
-    id: 'spfy',
     key: 'spotify',
     name: 'Spotify',
     url: 'spotify.com',
@@ -50,7 +47,6 @@ export const platforms: { [key: string]: PlatformObject } = {
   },
 
   instagram: {
-    id: 'ig',
     key: 'instagram',
     name: 'Instagram',
     url: 'instagram.com',
@@ -65,7 +61,6 @@ export const platforms: { [key: string]: PlatformObject } = {
   },
 
   github: {
-    id: 'gh',
     key: 'github',
     name: 'Github',
     url: 'github.com',
@@ -79,7 +74,6 @@ export const platforms: { [key: string]: PlatformObject } = {
   },
 
   snapchat: {
-    id: 'snap',
     key: 'snapchat',
     name: 'Snapchat',
     url: 'snapchat.com',
@@ -92,7 +86,6 @@ export const platforms: { [key: string]: PlatformObject } = {
   },
 
   discord: {
-    id: 'dg',
     key: 'discord',
     name: 'Discord',
     url: 'discordapp.com',
@@ -105,7 +98,6 @@ export const platforms: { [key: string]: PlatformObject } = {
   },
 
   dlive: {
-    id: 'dlv',
     key: 'dlive',
     name: 'DLive',
     url: 'dlive.com',
@@ -117,21 +109,7 @@ export const platforms: { [key: string]: PlatformObject } = {
     },
   },
 
-  mixer: {
-    id: 'mixr',
-    key: 'mixer',
-    name: 'Mixer',
-    url: 'mixer.com',
-    hex: '#29bbed',
-    wideThumb: true,
-    baseURLMatch: /http(?:s)?:\/\/(?:www\.)?mixer\.com\//,
-    contentTypeMatches: {
-      channel: /http(?:s)?:\/\/(?:www\.)?mixer\.com\/([a-zA-Z0-9_-]{1,})/,
-    },
-  },
-
   patreon: {
-    id: 'ptrn',
     key: 'patreon',
     name: 'Patreon',
     url: 'patreon.com',
@@ -145,7 +123,6 @@ export const platforms: { [key: string]: PlatformObject } = {
   },
 
   soundcloud: {
-    id: 'scld',
     key: 'soundcloud',
     name: 'SoundCloud',
     url: 'soundcloud.com',
@@ -160,7 +137,6 @@ export const platforms: { [key: string]: PlatformObject } = {
   },
 
   tiktok: {
-    id: 'tktk',
     key: 'tiktok',
     name: 'TikTok',
     url: 'tiktok.com',
@@ -174,7 +150,6 @@ export const platforms: { [key: string]: PlatformObject } = {
   },
 
   twitter: {
-    id: 'twtr',
     key: 'twitter',
     name: 'Twitter',
     url: 'twitter.com',
@@ -186,24 +161,4 @@ export const platforms: { [key: string]: PlatformObject } = {
       profile: /http(?:s)?:\/\/(?:www\.)?twitter\.com\/([a-zA-Z0-9-_]{1,})/,
     },
   },
-
-  timcoleme: {
-    id: 'timc',
-    key: 'timcoleme',
-    name: 'Timothy Cole',
-    url: 'timcole.me',
-    hex: '#1b7fe6',
-    wideThumb: true,
-    baseURLMatch: /http(?:s)?:\/\/(?:www\.)?timcole\.me\//,
-    contentTypeMatches: {
-      stream: /http(?:s)?:\/\/timcole\.me\/(nda)/,
-    },
-  },
 };
-
-// Statically render an object that maps platform keys to their respective platform ids
-export const idToKey = (() => {
-  const obj: { [key: string]: string } = {};
-  Object.keys(platforms).map((platformName) => (obj[platforms[platformName].id] = platformName));
-  return obj;
-})();
