@@ -5,7 +5,7 @@ export const platforms: { [key: string]: PlatformObject } = {
     key: 'twitch',
     name: 'Twitch',
     url: 'twitch.tv',
-    hex: '#6441A4',
+    hex: '#6441a5',
     wideThumb: true,
     baseURLMatch: /http(?:s)?:\/\/(?:www\.)?twitch\.tv\//,
     contentTypeMatches: {
