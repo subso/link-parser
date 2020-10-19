@@ -153,7 +153,7 @@ export const platforms: { [key: string]: PlatformObject } = {
     key: 'twitter',
     name: 'Twitter',
     url: 'twitter.com',
-    hex: '#00aced',
+    hex: '#1da1f2',
     wideThumb: false,
     baseURLMatch: /http(?:s)?:\/\/(?:www\.)?twitter\.com\//,
     contentTypeMatches: {
