@@ -21,7 +21,7 @@ export const platforms: { [key: string]: PlatformObject } = {
     url: 'youtube.com',
     hex: '#FF0000',
     wideThumb: true,
-    baseURLMatch: /http(?:s)?:\/\/(?:www\.)?youtube\.com\//,
+    baseURLMatch: /^((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube\.com|youtu.be))/,
     contentTypeMatches: {
       channel: /(?:https|http)\:\/\/(?:[\w]+\.)?youtube\.com\/(?:c\/|channel\/|user\/)([a-zA-Z0-9\-_]{1,})/,
       video: /http(?:s?):\/\/(?:www\.)?youtu(?:be\.com\/watch\?v=|\.be\/)([\w\-\_]*)(&(amp;)[\w\=]*)?/,
