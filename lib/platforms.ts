@@ -62,7 +62,7 @@ export const platforms: { [key: string]: PlatformObject } = {
 
   github: {
     key: 'github',
-    name: 'Github',
+    name: 'GitHub',
     url: 'github.com',
     hex: '#181717',
     wideThumb: false,
